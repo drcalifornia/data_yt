@@ -116,7 +116,8 @@ st.dataframe(
         "short_score": st.column_config.ProgressColumn(
             "Short Score",
             min_value=0,
-            max_value=df.short_score.max()
+            max_value=df.short_score.max(),
+            format="%.2f"
         ),
         "YouTube": st.column_config.LinkColumn("Abrir vídeo")
     }
